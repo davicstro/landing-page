@@ -51,9 +51,9 @@ header {
 .center {
     display: flex;
     flex-direction: column;
-    margin: 90px 160px;
+    margin: 90px 0 0 160px;
+    margin-bottom: 260px;
     color: #fff;
-    margin-bottom: 23rem;
 }
 
 /* .center::before{ 
@@ -123,8 +123,12 @@ p {
 
 }
 
-.footer {
-    background-color: rgb(1, 27, 35);
-    height: 150px;
-    margin-top: 423;
+.img-center{
+    gap: 40px;
+    margin-left: 160px;
+    margin-bottom: 400px;
+    display: flex; 
+}
+.img-center img{
+    width: 30px;
 }
