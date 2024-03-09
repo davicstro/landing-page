@@ -22,7 +22,7 @@ section{
 }
 
 #background{
-    background-image: url(fotis-fotopoulos-6sAl6aQ4OWI-unsplash.jpg);
+    background-image: url(/img/fotis-fotopoulos-6sAl6aQ4OWI-unsplash.jpg);
     background-color: black;
     background-repeat: no-repeat;
     background-size: cover;
@@ -64,7 +64,7 @@ header {
 }
 
 /* conteudo da pagina */
-.center {
+#center {
     display: flex;
     flex-direction: column;
     margin: 90px 160px 0 160px;
