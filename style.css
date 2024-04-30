@@ -9,7 +9,9 @@
 body {
   background-color: #15131e;
 }
+
 header {
+  position: fixed;
   top: 0;
   width: 100%;
   background-color: #8030d9;
@@ -49,6 +51,7 @@ header {
   display: flex;
   flex-direction: column;
   color: #fff;
+  margin-top: 150px !important;
   margin: 100px;
 }
 
