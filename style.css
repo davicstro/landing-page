@@ -10,7 +10,10 @@ body {
   background-color: #15131e;
 }
 header {
+  top: 0;
+  width: 100%;
   background-color: #8030d9;
+  border-radius: 0 0 10px 10px;
 }
 
 .container-header {
@@ -99,10 +102,9 @@ p {
 
 footer {
   background-color: #28243e;
-  position: fixed;
   bottom: 0;
   width: 100%;
-  border-radius: 10px 10px 0 0;
+  /* border-radius: 10px 10px 0 0; */
 }
 .rodape {
   display: flex;
