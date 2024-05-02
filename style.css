@@ -4,10 +4,11 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Ubuntu, sans-serif;
+  
 }
 
 body {
-  background-color: #15131e;
+  background-image: linear-gradient(to bottom right, #250F37, #5E42E5);
 }
 header {
   background-color: #8030d9;
@@ -23,8 +24,7 @@ header {
 }
 
 .logo-img {
-  width: 80px;
-  padding: 15px;
+  width: 50px;
 }
 
 .menu {
@@ -39,11 +39,16 @@ header {
 .menu p {
   color: #fff;
 }
+.menu :hover{
+  color: #463455;
+  text-decoration: none;
+}
 
 /* conteudo da pagina */
 
-.center {
+main {
   display: flex;
+  height: 80vh;
   flex-direction: column;
   color: #fff;
   margin: 100px;
@@ -93,14 +98,14 @@ p {
 }
 
 .btn a:hover {
-  color: #acacac;
+  color: #463455;
   text-decoration: none;
 }
 
 footer {
-  background-color: #28243e;
-  position: fixed;
-  bottom: 0;
+  background-color: #1a1420;
+  /* position: fixed; */
+  /* bottom: 0; */
   width: 100%;
   border-radius: 10px 10px 0 0;
 }
@@ -111,15 +116,20 @@ footer {
   padding-left: 100px;
   gap: 20px;
 }
+.rodape :hover{
+  color: #5E42E5;
+}
 .rodape img {
   display: flex;
-  height: 25px;
+  height: 20px;
 }
 .rodape a {
   display: flex;
   align-items: center;
-  font-size: large;
   gap: 20px;
   color: #fff;
   text-decoration: none;
+}
+.rodape a p {
+  font-size: 17px;
 }
