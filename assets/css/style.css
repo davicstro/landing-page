@@ -9,6 +9,7 @@
 
 body {
   background-image: linear-gradient(to bottom right, #250F37, #5E42E5);
+  background-repeat: no-repeat;
 }
 header {
   background-color: #8030d9;
@@ -58,7 +59,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  min-width: 570px;
+  /* min-width: 570px; */
 }
 
 h1 {
@@ -132,4 +133,8 @@ footer {
 }
 .rodape a p {
   font-size: 17px;
+}
+
+@media screen (max-width: 430px) {
+  
 }
