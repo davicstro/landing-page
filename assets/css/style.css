@@ -9,12 +9,13 @@
 
 body {
   background-image: linear-gradient(to bottom right, #250F37, #5E42E5);
+  background-repeat: no-repeat ;
 }
 header {
   background-color: #8030d9;
 }
-
-.container-header {
+  
+.cont-header {
   display: flex;
   align-items: center;
   padding-left: 20px;
@@ -48,36 +49,19 @@ header {
 
 main {
   display: flex;
-  height: 80vh;
   flex-direction: column;
   color: #fff;
-  margin: 100px;
+  height: 100vh;
+  /* height: 80vh; */
+  /* margin: 100px; */
 }
 
 .item1 {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  min-width: 570px;
 }
 
-h1 {
-  font-size: 75px;
-  font-style: light;
-}
-h2 {
-  font-size: 40px;
-}
-h3 {
-  font-size: 30px;
-}
-p {
-  text-align: justify;
-  font-size: 20px;
-  width: 65%;
-}
-
-.btn {
+.botao {
   margin-top: 50px;
   display: flex;
   justify-content: center;
@@ -90,14 +74,14 @@ p {
   width: 300px;
 }
 
-.btn a {
+.botao a {
   color: #fff;
   display: flex;
   text-decoration: none;
   font-size: 20px;
 }
 
-.btn a:hover {
+.botao a:hover {
   color: #463455;
   text-decoration: none;
 }
@@ -106,18 +90,15 @@ footer {
   background-color: #1a1420;
   /* position: fixed; */
   /* bottom: 0; */
-  width: 100%;
   border-radius: 10px 10px 0 0;
 }
 .rodape {
   display: flex;
+  justify-content: center;
   height: 100px;
   align-items: center;
-  padding-left: 100px;
   gap: 20px;
-}
-.rodape :hover{
-  color: #5E42E5;
+  /* padding-left: 100px; */
 }
 .rodape img {
   display: flex;
@@ -132,4 +113,21 @@ footer {
 }
 .rodape a p {
   font-size: 17px;
+  margin: 0;
+}
+.rodape :hover{
+  color: #5E42E5;
+}
+
+@media (max-width: 430px){
+  main {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    color: #fff;
+    height: 100vh;
+    /* height: 80vh; */
+    /* margin: 100px; */
+  }
+
 }
