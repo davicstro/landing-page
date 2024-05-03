@@ -15,6 +15,7 @@ header {
   background-color: #8030d9;
 }
   
+
 .cont-header {
   display: flex;
   align-items: center;
@@ -47,41 +48,51 @@ header {
 
 /* conteudo da pagina */
 
-main {
+main{
   display: flex;
-  flex-direction: column;
-  color: #fff;
-  height: 100vh;
-  /* height: 80vh; */
-  /* margin: 100px; */
 }
-
 .item1 {
   display: flex;
   flex-direction: column;
+  color: #fff;
+  padding: 100px;
+  font-size: 20px;
+}
+.item1 h1{
+font-size: 50px;
 }
 
-.botao {
-  margin-top: 50px;
+.texto01{
+  padding: 100px;
+  color: #fff;
+}
+
+/* botao */
+
+.botao{
+  padding-left: 100px;
+}
+
+.itens-botao {
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50px;
   background-color: #8030d9;
-  border: #fff;
+  /* border: #fff; */
   cursor: pointer;
   height: 50px;
   width: 300px;
 }
 
-.botao a {
+.itens-botao a {
   color: #fff;
   display: flex;
   text-decoration: none;
   font-size: 20px;
 }
 
-.botao a:hover {
+.itens-botao :hover {
   color: #463455;
   text-decoration: none;
 }
@@ -93,9 +104,10 @@ footer {
   border-radius: 10px 10px 0 0;
 }
 .rodape {
+  height: 100px;
   display: flex;
   justify-content: center;
-  height: 100px;
+  
   align-items: center;
   gap: 20px;
   /* padding-left: 100px; */
@@ -119,15 +131,35 @@ footer {
   color: #5E42E5;
 }
 
+
 @media (max-width: 430px){
   main {
     display: flex;
     flex-direction: column;
-    padding: 50px;
+    
     color: #fff;
     height: 100vh;
     /* height: 80vh; */
     /* margin: 100px; */
+  }
+  .item1  {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 20px;
+    /* align-items: center; */
+    text-justify: distribute;
+  }
+  .botao{
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+  }
+ 
+  .texto01{
+    text-align: justify;
+    display: flex;
+    padding: 40px;
   }
 
 }
