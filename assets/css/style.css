@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Ubuntu, sans-serif;
+  
+}
+
+body {
+  background-image: linear-gradient(to bottom right, #250F37, #5E42E5);
+}
+header {
+  background-color: #8030d9;
+}
+
+.container-header {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  justify-content: space-between;
+  height: 100px;
+}
+
+.logo-img {
+  width: 50px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+  gap: 20px;
+}
+.menu a {
+  text-decoration: none;
+}
+.menu p {
+  color: #fff;
+}
+.menu :hover{
+  color: #463455;
+  text-decoration: none;
+}
+
+/* conteudo da pagina */
+
+main {
+  display: flex;
+  height: 80vh;
+  flex-direction: column;
+  color: #fff;
+  margin: 100px;
+}
+
+.item1 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 570px;
+}
+
+h1 {
+  font-size: 75px;
+  font-style: light;
+}
+h2 {
+  font-size: 40px;
+}
+h3 {
+  font-size: 30px;
+}
+p {
+  text-align: justify;
+  font-size: 20px;
+  width: 65%;
+}
+
+.btn {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  background-color: #8030d9;
+  border: #fff;
+  cursor: pointer;
+  height: 50px;
+  width: 300px;
+}
+
+.btn a {
+  color: #fff;
+  display: flex;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.btn a:hover {
+  color: #463455;
+  text-decoration: none;
+}
+
+footer {
+  background-color: #1a1420;
+  /* position: fixed; */
+  /* bottom: 0; */
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+.rodape {
+  display: flex;
+  height: 100px;
+  align-items: center;
+  padding-left: 100px;
+  gap: 20px;
+}
+.rodape :hover{
+  color: #5E42E5;
+}
+.rodape img {
+  display: flex;
+  height: 20px;
+}
+.rodape a {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+.rodape a p {
+  font-size: 17px;
+}
