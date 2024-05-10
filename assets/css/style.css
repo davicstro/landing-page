@@ -40,6 +40,7 @@ header {
 }
 .menu p {
   color: #fff;
+  margin: 0;
 }
 .menu :hover {
   color: #463455;
@@ -108,12 +109,11 @@ footer {
   border-radius: 10px 10px 0 0;
 }
 .rodape {
-  height: 100px;
   display: flex;
-  justify-content: center;
-
-  align-items: center;
+  height: 100px;
   gap: 20px;
+  justify-content: center;
+  align-items: center;
   /* padding-left: 100px; */
 }
 .rodape img {
