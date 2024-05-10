@@ -1,20 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Ubuntu, sans-serif;
-  
+  font-family: Montserrat, sans-serif;
 }
 
 body {
-  background-image: linear-gradient(to bottom right, #250F37, #5E42E5);
-  background-repeat: no-repeat ;
+  background-image: linear-gradient(to bottom right, #250f37, #5e42e5);
+  background-repeat: no-repeat;
 }
 header {
   background-color: #8030d9;
 }
-  
 
 .cont-header {
   display: flex;
@@ -33,6 +32,7 @@ header {
   display: flex;
   flex-direction: row;
   font-size: 20px;
+  font-weight: bold;
   gap: 20px;
 }
 .menu a {
@@ -41,14 +41,14 @@ header {
 .menu p {
   color: #fff;
 }
-.menu :hover{
+.menu :hover {
   color: #463455;
   text-decoration: none;
 }
 
 /* conteudo da pagina */
 
-main{
+main {
   display: flex;
 }
 .item1 {
@@ -58,18 +58,22 @@ main{
   padding: 100px;
   font-size: 20px;
 }
-.item1 h1{
-font-size: 50px;
+.item1 h1 {
+  font-size: 50px;
+}
+.item1 p {
+  text-align: justify;
+  text-indent: 50px;
 }
 
-.texto01{
+.texto01 {
   padding: 100px;
   color: #fff;
 }
 
 /* botao */
 
-.botao{
+.botao {
   padding-left: 100px;
 }
 
@@ -107,7 +111,7 @@ footer {
   height: 100px;
   display: flex;
   justify-content: center;
-  
+
   align-items: center;
   gap: 20px;
   /* padding-left: 100px; */
@@ -127,39 +131,41 @@ footer {
   font-size: 17px;
   margin: 0;
 }
-.rodape :hover{
-  color: #5E42E5;
+.rodape :hover {
+  color: #5e42e5;
 }
 
-
-@media (max-width: 430px){
+@media (max-width: 430px) {
   main {
     display: flex;
     flex-direction: column;
-    
+
     color: #fff;
     height: 100vh;
     /* height: 80vh; */
     /* margin: 100px; */
   }
-  .item1  {
+  .item1 {
     display: flex;
     flex-direction: column;
-    text-align: justify;
     padding: 20px;
-    /* align-items: center; */
-    text-justify: distribute;
   }
-  .botao{
+  .item1 p {
+    text-align: justify;
+    text-indent: 50px;
+    font-size: medium;
+    word-spacing: px;
+  }
+
+  .botao {
     display: flex;
     justify-content: center;
     padding-left: 0;
   }
- 
-  .texto01{
+
+  .texto01 {
     text-align: justify;
     display: flex;
     padding: 40px;
   }
-
 }
