@@ -1,20 +1,24 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Montserrat, sans-serif;
+  font-family: Ubuntu, sans-serif;
+  
 }
 
 body {
-  background-image: linear-gradient(to bottom right, #250f37, #5e42e5);
-  background-repeat: no-repeat;
+  background-image: linear-gradient(to bottom right, #250F37, #5E42E5);
+  background-repeat: no-repeat ;
+  height: 100%;
+ 
 }
 header {
   background-color: #8030d9;
 }
-
+  
 .cont-header {
   display: flex;
   align-items: center;
@@ -32,7 +36,6 @@ header {
   display: flex;
   flex-direction: row;
   font-size: 20px;
-  font-weight: bold;
   gap: 20px;
 }
 .menu a {
@@ -40,9 +43,8 @@ header {
 }
 .menu p {
   color: #fff;
-  margin: 0;
 }
-.menu :hover {
+.menu :hover{
   color: #463455;
   text-decoration: none;
 }
@@ -51,69 +53,63 @@ header {
 
 main {
   display: flex;
-}
-.item1 {
-  display: flex;
   flex-direction: column;
   color: #fff;
-  padding: 100px;
-  font-size: 20px;
+  height: 100vh;
+  /* height: 80vh; */
+  /* margin: 100px; */
 }
-.item1 h1 {
-  font-size: 50px;
+.main-content{
+  flex-direction: column;
+  min-height: 100vh;
 }
-.item1 p {
-  text-align: justify;
-  text-indent: 50px;
-}
-
-.texto01 {
-  padding: 100px;
-  color: #fff;
-}
-
-/* botao */
-
-.botao {
-  padding-left: 100px;
-}
-
-.itens-botao {
+.content {
+  flex: 1;
   display: flex;
+  flex-direction: column;
+  padding: 40px;
+  
+}
+.content p{
+  max-width: 50rem;
+}
+.botao {
+  display: flex;
+  margin-top: 50px;
   justify-content: center;
   align-items: center;
   border-radius: 50px;
   background-color: #8030d9;
-  /* border: #fff; */
+  border: #fff;
   cursor: pointer;
   height: 50px;
   width: 300px;
 }
 
-.itens-botao a {
+.botao a {
   color: #fff;
   display: flex;
   text-decoration: none;
   font-size: 20px;
 }
 
-.itens-botao :hover {
+.botao a:hover {
   color: #463455;
   text-decoration: none;
 }
-
+.texto2{
+  margin-top: 50px;
+}
 footer {
   background-color: #1a1420;
-  /* position: fixed; */
-  /* bottom: 0; */
   border-radius: 10px 10px 0 0;
 }
 .rodape {
   display: flex;
-  height: 100px;
-  gap: 20px;
   justify-content: center;
+  height: 100px;
   align-items: center;
+  gap: 20px;
   /* padding-left: 100px; */
 }
 .rodape img {
@@ -131,41 +127,23 @@ footer {
   font-size: 17px;
   margin: 0;
 }
-.rodape :hover {
-  color: #5e42e5;
+.rodape :hover{
+  color: #5E42E5;
 }
 
-@media (max-width: 430px) {
+@media (max-width: 430px){
   main {
     display: flex;
     flex-direction: column;
-
+    padding: 10px;
     color: #fff;
     height: 100vh;
     /* height: 80vh; */
     /* margin: 100px; */
   }
-  .item1 {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-  }
-  .item1 p {
-    text-align: justify;
-    text-indent: 50px;
-    font-size: medium;
-    word-spacing: px;
-  }
-
-  .botao {
+  .divbotao{
     display: flex;
     justify-content: center;
-    padding-left: 0;
   }
 
-  .texto01 {
-    text-align: justify;
-    display: flex;
-    padding: 40px;
-  }
 }
