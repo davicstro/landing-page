@@ -50,8 +50,6 @@ header {
 
 /* conteudo da pagina */
 
-
-
 .content {
   display: flex;
   flex-direction: column;
@@ -122,16 +120,16 @@ header {
   color: #5e42e5;
 }
 
-video {
+iframe {
   display: flex;
   width: 50rem;
   border-radius: 10px;
 }
 
 @media (max-width: 950px) {
- video{
-  width: 100%;
- }
+  iframe {
+    width: 100%;
+  }
 }
 
 @media (max-width: 500px) {
@@ -145,16 +143,14 @@ video {
     justify-content: center;
   }
 
-
   .divbotao {
     display: flex;
     justify-content: center;
   }
 
-  video {
+  iframe {
     display: flex;
     width: 100%;
     border-radius: 10px;
   }
-
 }
