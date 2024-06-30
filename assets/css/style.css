@@ -11,18 +11,15 @@ body {
   background-image: linear-gradient(to bottom right, #250f37, #5e42e5);
 }
 
-header {
-  background-color: #8030d9;
-}
 
-.cont-header {
+/* .cont-header {
   display: flex;
   align-items: center;
   padding-left: 20px;
   padding-right: 20px;
   justify-content: space-between;
   height: 100px;
-}
+} */
 
 .logo-img {
   width: 50px;
@@ -134,13 +131,10 @@ iframe {
 
 @media (max-width: 500px) {
   .content {
-    display: flex;
+    margin: 0;
+    margin-top: 30px;
+    margin-bottom: 30px;
     text-align: justify;
-  }
-
-  .content h3 {
-    display: flex;
-    justify-content: center;
   }
 
   .divbotao {
