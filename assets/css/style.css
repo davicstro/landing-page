@@ -1,48 +1,25 @@
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"); */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Ubuntu, sans-serif;
+  font-family: Roboto , sans-serif;
 }
 
 body {
   background-image: linear-gradient(to bottom right, #250f37, #5e42e5);
 }
+/* conteudo do header */
 
-
-/* .cont-header {
-  display: flex;
-  align-items: center;
-  padding-left: 20px;
-  padding-right: 20px;
-  justify-content: space-between;
-  height: 100px;
-} */
-
-.logo-img {
-  width: 50px;
+.navbar-light {
+  background-color: #fff ;
 }
 
-.menu {
-  display: flex;
-  flex-direction: row;
-  font-size: 20px;
-  gap: 20px;
-}
-
-.menu a {
-  text-decoration: none;
-}
-
-.menu p {
-  color: #fff;
-}
-
-.menu :hover {
-  color: #463455;
-  text-decoration: none;
+.logo {
+  width: 30px;
 }
 
 /* conteudo da pagina */
